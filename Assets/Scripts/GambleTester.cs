@@ -8,7 +8,7 @@ public class GambleTester : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Debug.Log("Program start");
     }
 
     // Update is called once per frame
@@ -18,7 +18,9 @@ public class GambleTester : MonoBehaviour
     }
 
     public void majorLossPressed() {
+        Debug.Log("Button pressed");
         myGambler.majorLoss();
+        Debug.Log("Button pressed");
     }
 
     public void minorLossPressed() {
