@@ -5,7 +5,8 @@ public class DefaultGambler : GamblerLogic
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Debug.Log("New gambler");
+        output();
     }
 
     // Update is called once per frame

@@ -34,12 +34,18 @@ public class GamblerLogic : MonoBehaviour
     void Start()
     {
         newGamble();
+        money = 100.0;
+        bet = 5.0;
+        lastBet = 0;
+        patience = 30.0;
+        maxPatience = 30.0;
+        gambleOngoing = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        patience = patience - Time.deltaTime;
+        //patience = patience - Time.deltaTime;
         if (patience <= 0) {
             gambleOngoing = false;
             endGamble();
