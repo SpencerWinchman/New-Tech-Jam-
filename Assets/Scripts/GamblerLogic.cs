@@ -40,7 +40,7 @@ public class GamblerLogic : MonoBehaviour
 
     //How the gambler's behavior will change upon a major loss
     public void majorLoss() {
-        
+        newGamble();
     }
 
     //How the gambler's behavior will change upon a minor loss

@@ -247,13 +247,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18447752}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 18447753}
+        m_TargetAssemblyTypeName: GambleTester, Assembly-CSharp
+        m_MethodName: majorWinPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -379,7 +379,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 180489608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18447753}
+        m_TargetAssemblyTypeName: GambleTester, Assembly-CSharp
+        m_MethodName: majorLossPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &180489608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,7 +1037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1043476328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18447753}
+        m_TargetAssemblyTypeName: GambleTester, Assembly-CSharp
+        m_MethodName: minorWinPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1043476328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1660,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1956736207}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18447753}
+        m_TargetAssemblyTypeName: GambleTester, Assembly-CSharp
+        m_MethodName: minorLossPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1956736207
 MonoBehaviour:
   m_ObjectHideFlags: 0
