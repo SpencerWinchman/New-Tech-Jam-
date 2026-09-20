@@ -11,10 +11,11 @@ public class GamblerLogic : MonoBehaviour
     //How much money the gambler bet on their last bet
     public double lastBet;
     //How much longer the gambler is *currently* willing to wait
-    public double patience = 30.0;
+    public double patience = 60.0;
     //How long the gambler is willing to wait at the start of this gamble
     public double maxPatience = 30.0;
     //If the current gamble has started
+    public int timesTillMoodChange = 3;
     public bool gambleOngoing = false;
     //What the gambler's current "mood" displays as
     public enum Mood {
@@ -34,18 +35,12 @@ public class GamblerLogic : MonoBehaviour
     void Start()
     {
         newGamble();
-        money = 100.0;
-        bet = 5.0;
-        lastBet = 0;
-        patience = 30.0;
-        maxPatience = 30.0;
-        gambleOngoing = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //patience = patience - Time.deltaTime;
+        patience = patience - Time.deltaTime;
         if (patience <= 0) {
             gambleOngoing = false;
             endGamble();
